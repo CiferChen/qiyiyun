@@ -1,0 +1,5 @@
+#Tue Jun 23 15:26:16 CST 2015
+eclipse.preferences.version=1
+validator.Checked=.project,src,WebRoot
+validator.Revalidate=true
+validator.Unchecked=

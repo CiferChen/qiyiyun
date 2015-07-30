@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="QiyiyunServer"
+  id="myeclipse.1426149352951"
+  context-root="/QiyiyunServer"
+  j2ee-spec="5.0"
+  archive="QiyiyunServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

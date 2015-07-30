@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="zhidian_user" catalog="zhidian"
+		class="com.zhidian.server.model.User">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_rank" catalog="zhidian"
+		class="com.zhidian.server.model.UserRank">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_member" catalog="zhidian"
+		class="com.zhidian.server.model.UserMember">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_address" catalog="zhidian"
+		class="com.zhidian.server.model.UserAddress">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_account" catalog="zhidian"
+		class="com.zhidian.server.model.UserAccount">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_service" catalog="zhidian"
+		class="com.zhidian.server.model.Service">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_region" catalog="zhidian"
+		class="com.zhidian.server.model.Region">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_payment" catalog="zhidian"
+		class="com.zhidian.server.model.Payment">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_pay_log" catalog="zhidian"
+		class="com.zhidian.server.model.PayLog">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_order_info" catalog="zhidian"
+		class="com.zhidian.server.model.OrderInfo">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_log" catalog="zhidian"
+		class="com.zhidian.server.model.Log">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_category" catalog="zhidian"
+		class="com.zhidian.server.model.Category">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_agency" catalog="zhidian"
+		class="com.zhidian.server.model.Agency">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_group" catalog="zhidian"
+		class="com.zhidian.server.model.Group">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_activity" catalog="zhidian"
+		class="com.zhidian.server.model.Activity">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_authority_type" catalog="zhidian"
+		class="com.zhidian.server.model.AuthorityType">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_authority" catalog="zhidian"
+		class="com.zhidian.server.model.Authority">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_module_type" catalog="zhidian"
+		class="com.zhidian.server.model.ModuleType">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_module" catalog="zhidian"
+		class="com.zhidian.server.model.Module">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_device" catalog="zhidian"
+		class="com.zhidian.server.model.Device">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_notify" catalog="zhidian"
+		class="com.zhidian.server.model.Notify">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_place_service_type" catalog="zhidian"
+		class="com.zhidian.server.model.PlaceServiceType">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_place_service" catalog="zhidian"
+		class="com.zhidian.server.model.PlaceService">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_role" catalog="zhidian"
+		class="com.zhidian.server.model.UserRole">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_area" catalog="zhidian"
+		class="com.zhidian.server.model.Area">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_city" catalog="zhidian"
+		class="com.zhidian.server.model.City">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_order_delivery" catalog="zhidian"
+		class="com.zhidian.server.model.OrderDelivery">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_order_suborder" catalog="zhidian"
+		class="com.zhidian.server.model.SubOrder">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_order_subtype" catalog="zhidian"
+		class="com.zhidian.server.model.OrderSubType">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_order" catalog="zhidian"
+		class="com.zhidian.server.model.Order">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_province" catalog="zhidian"
+		class="com.zhidian.server.model.Province">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_service_place_type" catalog="zhidian"
+		class="com.zhidian.server.model.ServicePlaceType">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_service_place" catalog="zhidian"
+		class="com.zhidian.server.model.ServicePlace">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_delivery_address" catalog="zhidian"
+		class="com.zhidian.server.model.DeliveryAddress">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_account_log" catalog="zhidian"
+		class="com.zhidian.server.model.UserAccountLog">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="zhidian_user_placeservice_account" catalog="zhidian"
+		class="com.zhidian.server.model.UserPlaceServiceAccount">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="aa26" catalog="zhidian"
+		class="com.zhidian.server.model.AA26">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="t_activity" catalog="zhidian"
+		class="com.zhidian.server.model.Activity">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_area" catalog="zhidian"
+		class="com.zhidian.server.model.Area">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_article_type" catalog="zhidian"
+		class="com.zhidian.server.model.ArticleType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_article" catalog="zhidian"
+		class="com.zhidian.server.model.Article">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_certification_type" catalog="zhidian"
+		class="com.zhidian.server.model.CertificationType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_certification" catalog="zhidian"
+		class="com.zhidian.server.model.Certification">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_collection" catalog="zhidian"
+		class="com.zhidian.server.model.Collection">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_department_right_rel" catalog="zhidian"
+		class="com.zhidian.server.model.DepartmentRightRel">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="t_department" catalog="zhidian"
+		class="com.zhidian.server.model.Department">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_favorite" catalog="zhidian"
+		class="com.zhidian.server.model.Favorite">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_goods_type" catalog="zhidian"
+		class="com.zhidian.server.model.GoodsType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_goods" catalog="zhidian"
+		class="com.zhidian.server.model.Goods">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_manager_info" catalog="zhidian"
+		class="com.zhidian.server.model.ManagerInfo">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_manager_managerrole_rel" catalog="zhidian"
+		class="com.zhidian.server.model.ManagerRoleRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_manager_role" catalog="zhidian"
+		class="com.zhidian.server.model.ManagerRole">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_manager" catalog="zhidian"
+		class="com.zhidian.server.model.Manager">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_managerrole_right_rel" catalog="zhidian"
+		class="com.zhidian.server.model.ManagerRoleRightRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_meetingroom_record" catalog="zhidian"
+		class="com.zhidian.server.model.MeetingRoomRecord">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_meetingroom" catalog="zhidian"
+		class="com.zhidian.server.model.MeetingRoom">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_message_templet_type" catalog="zhidian"
+		class="com.zhidian.server.model.MessageTempletType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_message_templet" catalog="zhidian"
+		class="com.zhidian.server.model.MessageTemplet">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_message_type" catalog="zhidian"
+		class="com.zhidian.server.model.MessageType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_message" catalog="zhidian"
+		class="com.zhidian.server.model.Message">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_module_right_rel" catalog="zhidian"
+		class="com.zhidian.server.model.ModuleRightRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_module" catalog="zhidian"
+		class="com.zhidian.server.model.Module">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_nav" catalog="zhidian"
+		class="com.zhidian.server.model.Nav">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_order_service_rel" catalog="zhidian"
+		class="com.zhidian.server.model.OrderServiceRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_order" catalog="zhidian"
+		class="com.zhidian.server.model.Order">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="t_organization_type" catalog="zhidian"
+		class="com.zhidian.server.model.OrganizationType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_organization" catalog="zhidian"
+		class="com.zhidian.server.model.Organization">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_person_account" catalog="zhidian"
+		class="com.zhidian.server.model.PersonAccount">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_person_organization_rel" catalog="zhidian"
+		class="com.zhidian.server.model.PersonOrganizationRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_person_role_rel" catalog="zhidian"
+		class="com.zhidian.server.model.PersonRoleRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_person" catalog="zhidian"
+		class="com.zhidian.server.model.Person">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_right" catalog="zhidian"
+		class="com.zhidian.server.model.Right">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_role_department_rel" catalog="zhidian"
+		class="com.zhidian.server.model.RoleDepartmentRel">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="t_role_right_rel" catalog="zhidian"
+		class="com.zhidian.server.model.RoleRightRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_role" catalog="zhidian"
+		class="com.zhidian.server.model.Role">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_service_goods" catalog="zhidian"
+		class="com.zhidian.server.model.ServiceGoods">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_service_type" catalog="zhidian"
+		class="com.zhidian.server.model.ServiceType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_service" catalog="zhidian"
+		class="com.zhidian.server.model.Service">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_sms_interface" catalog="zhidian"
+		class="com.zhidian.server.model.SMSInterface">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_sms_type" catalog="zhidian"
+		class="com.zhidian.server.model.SMSType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_sms" catalog="zhidian"
+		class="com.zhidian.server.model.SMS">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_space" catalog="zhidian"
+		class="com.zhidian.server.model.Space">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_account_record" catalog="zhidian"
+		class="com.zhidian.server.model.UserAccountRecord">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_message_rel" catalog="zhidian"
+		class="com.zhidian.server.model.UserMessageRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_module_rel" catalog="zhidian"
+		class="com.zhidian.server.model.UserModuleRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_organization_account" catalog="zhidian"
+		class="com.zhidian.server.model.UserOrganizationAccount">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_organization_rel" catalog="zhidian"
+		class="com.zhidian.server.model.UserOrganizationRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_person_rel" catalog="zhidian"
+		class="com.zhidian.server.model.UserPersonRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_words_rel" catalog="zhidian"
+		class="com.zhidian.server.model.UserWordsRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_words_type" catalog="zhidian"
+		class="com.zhidian.server.model.UserWordsType">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user_words" catalog="zhidian"
+		class="com.zhidian.server.model.UserWords">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_user" catalog="zhidian"
+		class="com.zhidian.server.model.User">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_visitor" catalog="zhidian"
+		class="com.zhidian.server.model.Visitor">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_organ_certification_rel" catalog="zhidian"
+		class="com.zhidian.server.model.OrganCertificationRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_person_certification_rel" catalog="zhidian"
+		class="com.zhidian.server.model.PersonCertificationRel">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_activity_register_record" catalog="zhidian"
+		class="ActivityRegisterRecord">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_menber_rel_record" catalog="zhidian"
+		class="MenberRelRecord">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_member_rel_record" catalog="zhidian"
+		class="MemberRelRecord">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="t_account" catalog="zhidian" class="Account">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+<table name="t_account_record" catalog="zhidian"
+	class="AccountRecord">
+	<primary-key>
+		<generator class="uuid.hex"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="QiyiyunClient"
+  id="myeclipse.1435059000574"
+  context-root="/QiyiyunClient"
+  j2ee-spec="5.0"
+  archive="QiyiyunClient.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
