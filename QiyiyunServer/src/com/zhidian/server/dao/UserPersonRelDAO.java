@@ -1,13 +1,14 @@
 package com.zhidian.server.dao;
 
-import com.zhidian.server.model.UserPersonRel;
-
 import java.util.List;
+
+import org.apache.log4j.Logger;
 import org.hibernate.LockMode;
 import org.hibernate.Query;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Example;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.zhidian.server.model.UserPersonRel;
 
 /**
  	* A data access object (DAO) providing persistence and search support for UserPersonRel entities.
@@ -18,7 +19,7 @@ import org.slf4j.LoggerFactory;
   * @author MyEclipse Persistence Tools 
  */
 public class UserPersonRelDAO extends BaseHibernateDAO  {
-	     private static final Logger log = LoggerFactory.getLogger(UserPersonRelDAO.class);
+	     private static final Logger log = Logger.getLogger(UserPersonRelDAO.class);
 		//property constants
 	public static final String USER_ID = "userId";
 	public static final String PERSON_ID = "personId";
@@ -27,9 +28,11 @@ public class UserPersonRelDAO extends BaseHibernateDAO  {
 
     
     public void save(UserPersonRel transientInstance) {
+    	Transaction tx = getSession().beginTransaction();
         log.debug("saving UserPersonRel instance");
         try {
             getSession().save(transientInstance);
+            tx.commit();
             log.debug("save successful");
         } catch (RuntimeException re) {
             log.error("save failed", re);

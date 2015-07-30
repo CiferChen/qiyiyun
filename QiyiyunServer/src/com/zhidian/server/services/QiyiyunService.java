@@ -167,6 +167,9 @@ public class QiyiyunService extends ActionSupport {
 						} else if (method.equals("GetUserPersonalInfo")) {// 获取会员个人信息
 							UserPersonModule.getUserPersonalInfo(gson, je,
 									dataList);
+						}  else if (method.equals("NewUserPerson")) {// 新增会员个人
+							UserPersonModule.newUserPerson(gson, je,
+									dataList);
 						} else if (method.equals("UpdateUserPersonalInfo")) {// 更新会员个人信息
 							UserPersonModule.updateUserPersonalInfo(gson, je,
 									dataList);

@@ -1,13 +1,14 @@
 package com.zhidian.server.dao;
 
-import com.zhidian.server.model.Person;
-
 import java.util.List;
+
+import org.apache.log4j.Logger;
 import org.hibernate.LockMode;
 import org.hibernate.Query;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Example;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.zhidian.server.model.Person;
 
 /**
  	* A data access object (DAO) providing persistence and search support for Person entities.
@@ -18,7 +19,7 @@ import org.slf4j.LoggerFactory;
   * @author MyEclipse Persistence Tools 
  */
 public class PersonDAO extends BaseHibernateDAO  {
-	     private static final Logger log = LoggerFactory.getLogger(PersonDAO.class);
+	     private static final Logger log = Logger.getLogger(PersonDAO.class);
 		//property constants
 	public static final String PERSON_NAME = "personName";
 	public static final String PERSON_PHONE = "personPhone";
@@ -27,11 +28,14 @@ public class PersonDAO extends BaseHibernateDAO  {
 
 
     
-    public void save(Person transientInstance) {
+    public String save(Person transientInstance) {
+    	Transaction tx = getSession().beginTransaction();
         log.debug("saving Person instance");
         try {
             getSession().save(transientInstance);
+            tx.commit();
             log.debug("save successful");
+            return transientInstance.getPersonId();
         } catch (RuntimeException re) {
             log.error("save failed", re);
             throw re;
@@ -137,9 +141,11 @@ public class PersonDAO extends BaseHibernateDAO  {
     }
 
     public void attachDirty(Person instance) {
+    	Transaction tx = getSession().beginTransaction();
         log.debug("attaching dirty Person instance");
         try {
             getSession().saveOrUpdate(instance);
+            tx.commit();
             log.debug("attach successful");
         } catch (RuntimeException re) {
             log.error("attach failed", re);

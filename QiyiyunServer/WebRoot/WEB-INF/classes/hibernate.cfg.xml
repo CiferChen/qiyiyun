@@ -83,16 +83,10 @@
 		<mapping
 			resource="com/zhidian/server/model/RoleRightRel.hbm.xml" />
 		<mapping resource="com/zhidian/server/model/Collection.hbm.xml" />
-		<mapping
-			resource="com/zhidian/server/model/PersonAccount.hbm.xml" />
 		<mapping resource="com/zhidian/server/model/Department.hbm.xml" />
 		<mapping
 			resource="com/zhidian/server/model/UserOrganizationRel.hbm.xml" />
-		<mapping
-			resource="com/zhidian/server/model/UserAccountRecord.hbm.xml" />
 		<mapping resource="com/zhidian/server/model/Goods.hbm.xml" />
-		<mapping
-			resource="com/zhidian/server/model/UserOrganizationAccount.hbm.xml" />
 		<mapping
 			resource="com/zhidian/server/model/UserPersonRel.hbm.xml" />
 		<mapping
